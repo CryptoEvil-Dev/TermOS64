@@ -7,10 +7,10 @@ Execute:
 
     mov QWORD [ELF_HEAD_PTR], rcx
     mov rax, rcx
-    add rax, 23
+    add rax, 24
     mov rdx, [rax]
     mov QWORD [ELF_ENTRY_OFF], rdx
-    sub rax, 23
+    sub rax, 24
     add rax, rdx
     call rax
 

@@ -28,8 +28,8 @@ struct iregs
 struct iregs getregs();
 void setregs();
 
-u32 read_port(u32 _port);
-void write_port(u32 _port, u8 _src);
+u8 read_port(u32 _port);
+void write_port(u32 _port, u16 _src);
 
 // in al, dx  ; dx - порт al - регистр куда положить данные
 

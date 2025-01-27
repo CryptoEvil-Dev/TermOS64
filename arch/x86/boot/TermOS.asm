@@ -185,9 +185,6 @@ PM_OS:
 	mov byte [rax+6], 'g'
 	mov byte [rax+7], 0x07
 
-	mov rcx, kernel64
-	call Execute
-
 	mov rax, 0xb8000
 	add rax, (80*2)*3
 	add rax, 2
@@ -201,7 +198,3 @@ PM_OS:
 	
 	
 	jmp $
-
-%include "./lib/ELF.asm"
-
-kernel64:
